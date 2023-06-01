@@ -44,7 +44,7 @@ def download_images(search_query, num_images):
     print('Download das imagens concluído.')
 
 # Exemplo de uso
-search_query = 'dog'
-num_images = 200
+search_query = 'cat'
+num_images = 40
 
 download_images(search_query, num_images)

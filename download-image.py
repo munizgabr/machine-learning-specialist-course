@@ -22,7 +22,7 @@ def download_images(search_query, num_images):
         return
 
     # Criação do diretório para salvar as imagens
-    directory = 'images'
+    directory = os.path.join('images', search_query)
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -44,7 +44,7 @@ def download_images(search_query, num_images):
     print('Download das imagens concluído.')
 
 # Exemplo de uso
-search_query = 'cat'
+search_query = 'Daniel Radcliffe'
 num_images = 40
 
 download_images(search_query, num_images)
